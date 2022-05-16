@@ -1,0 +1,26 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Defaults: UTF-8, 4-space indentation (with 0x20, not 0x09), trim trailing
+# spaces, and Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = space
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+
+[*.{js,ts,svelte}]
+indent_size = 2
+charset = utf-8
+
+# Makefile syntax *requires* 0x09 indentation
+[Makefile]
+indent_style = tab
+
+# Markdown syntax sometimes requires trailing whitespace
+[*.md]
+trim_trailing_whitespace = false
